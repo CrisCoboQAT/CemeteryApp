@@ -10,8 +10,55 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.moradadosanjos.android.cemeteryapp.MainActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/main" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textSize="36sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingLeft="40dp"
+        android:paddingTop="22dp"
+        android:text="Morada dos Anjos" />
+    <TextView
+        android:id="@+id/operationHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingRight="5dp"
+        android:paddingBottom="8dp"
+        android:text="Horário de Funcionamento: 09:30 às 12:30" />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/operationHours"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingRight="5dp"
+        android:text="Telefone: (34)3312-2531" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/phone"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingRight="5dp"
+        android:text="Endereço: Rua Antenor Alves Gomes, 212" />
 </RelativeLayout>
