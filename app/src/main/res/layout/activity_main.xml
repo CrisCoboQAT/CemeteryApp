@@ -16,50 +16,59 @@
         android:scaleType="centerInside"
         android:contentDescription="logo"
         android:src="@drawable/main" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="36sp"
+        android:textSize="@dimen/activity_header_size"
         android:fontFamily="sans-serif"
         android:textStyle="bold"
         android:textColor="@android:color/black"
         android:paddingLeft="20dp"
         android:paddingTop="20dp"
-        android:text="Morada dos Anjos" />
+        android:text="@string/app_company" />
+
     <TextView
         android:id="@+id/operationHours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:textSize="16sp"
+        android:textSize="@dimen/activity_normal_size"
         android:fontFamily="sans-serif"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:paddingRight="5dp"
+        android:paddingRight="@dimen/activity_padding_right_size"
         android:paddingBottom="5dp"
-        android:text="Horário de Funcionamento: 09:30 às 12:30" />
+        android:text="@string/app_operationHours" />
+
     <TextView
         android:id="@+id/phone"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_above="@id/operationHours"
-        android:textSize="16sp"
+        android:textSize="@dimen/activity_normal_size"
         android:fontFamily="sans-serif"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:paddingRight="5dp"
-        android:text="Telefone: (34)3312-2531" />
+        android:text="@string/app_phone"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:paddingRight="@dimen/activity_padding_right_size"
+        android:autoLink="phone"
+        android:linksClickable="true"
+        android:textColorLink="#000000"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_above="@id/phone"
-        android:textSize="16sp"
+        android:textSize="@dimen/activity_normal_size"
         android:fontFamily="sans-serif"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:paddingRight="5dp"
-        android:text="Endereço: Rua Antenor Alves Gomes, 212" />
+        android:paddingRight="@dimen/activity_padding_right_size"
+        android:text="@string/app_adress" />
 </RelativeLayout>

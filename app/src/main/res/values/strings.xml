@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CemeteryApp</string>
+    <string name="app_adress">Endereço: Rua Antenor Alves Gomes, 212</string>
+    <string name="app_phone">Telefone: (34)3312-2531</string>
+    <string name="app_operationHours">Horário de Funcionamento: 09:30 às 12:30</string>
+    <string name="app_company">Morada dos Anjos</string>
 </resources>
